@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(207, 207, 207);
+}
+
+body {
+  .menu {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      margin: 1rem;
+      gap: 4rem;
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: brown;
+    }
+  }
+
+  #hero {
+    background-image: url(/assets/hero_img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    align-content: center;
+    #hero-text {
+      background-color: brown;
+      text-align: center;
+      padding: 2rem;
+      margin-left: 20rem;
+      margin-right: 20rem;
+    }
+  }
+
+  #section-intro {
+    margin: 1rem;
+    padding: 1rem;
+
+    ol {
+      display: flex;
+      margin: 2rem;
+      gap: 4rem;
+      text-align: center;
+    }
+
+    table {
+      margin: 2rem 0 2rem 0;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  .legend-person {
+    display: flex;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+    color: rgb(26, 26, 26);
+  }
+
+  .rule-card {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: whitesmoke;
+    color: rgb(26, 26, 26);
+  }
+
+  button {
+    padding: 0.5rem;
+    background-color: brown;
+    font-weight: 600;
+    color: whitesmoke;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .rule-answer-hide {
+    display: none;
+  }
+
+  .rule-answer-show {
+    display: block;
+  }
+}
