@@ -99,4 +99,18 @@ body {
   .rule-answer-show {
     display: block;
   }
+
+  footer {
+    background-color: brown;
+    color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+
+    aside {
+      border: 2px solid rgb(26, 26, 26);
+      padding: 1rem;
+    }
+  }
 }

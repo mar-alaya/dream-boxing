@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dream Boxing</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header>
       <section class="menu">
         <div id="logo">
           <img
-            src="/assets/ChatGPT Image 21. Aug. 2026, 13_43_06.png"
-            width="100rem"
+            src="/assets/logo.png"
+            width="70rem"
           />
         </div>
         <div class="main-menu">
           <nav>
             <ul>
-              <li><a href="">What is Boxing?</a></li>
-              <li><a href="">Boxing Legends</a></li>
-              <li><a href="">Rules</a></li>
+              <li><a href="#section-intro">What is Boxing?</a></li>
+              <li><a href="#legends">Boxing Legends</a></li>
+              <li><a href="#section-rules">Rules</a></li>
             </ul>
           </nav>
         </div>
       </section>
 
       <section id="hero">
+        <div id="hero-text">
         <h1>Everything you need to know about boxing.</h1>
         <p>Find everything a beginner needs to start their boxing journey.</p>
+        </div>
       </section>
     </header>
 
@@ -147,6 +149,7 @@
 
         <section class="section-legend-card">
           <div class="legend-person">
+            <div>
             <img
               src="https://tv.orf.at/exthakim_20230711162711_122~_v-epg__large__16__9_-5412e775eb65789c908def5fa9fdf24a7b895a8f.jpg"
               width="400rem"
@@ -161,8 +164,10 @@
               sport.
             </p>
           </div>
+          </div>
 
           <div class="legend-person">
+          <div>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Nhtr-uaiUaHD58ZajNvETvhLCceMsNaAblQxWCiCAGo714DbSK3FnY0&s=10"
               width="400rem"
@@ -176,8 +181,10 @@
               Tyson became the youngest heavyweight champion in boxing history.
             </p>
           </div>
+          </div>
 
           <div class="legend-person">
+            <div>
             <img
               src="https://gray-wilx-prod.gtv-cdn.com/resizer/v2/MMLLNXL2M5ON7DGI5GYXOCA6IM.jpg?auth=e6f50c6ca58c86c338e4974dd66994d37926125b866f4f403574115d3c3036eb&width=800&height=450&smart=true"
               width="400rem"
@@ -193,8 +200,10 @@
               speed and competitive mentality.
             </p>
           </div>
+          </div>
 
           <div class="legend-person">
+            <div>
             <img
               src="https://www.premierboxingchampions.com/sites/default/files/field/image/Sugar-Ray-Leonard-Roberto-Duran.jpg"
               width="400rem"
@@ -209,6 +218,7 @@
               fighters of his era.
             </p>
           </div>
+          </div>
         </section>
       </article>
 
@@ -217,7 +227,7 @@
         <div class="rule-card">
           <h4 class="rule-question">What is the objective of boxing?</h4>
           <button class="rule-button">Check the answer</button>
-          <p class="rule-answer">
+          <p class="rule-answer-hide">
             The objective is to land legal punches on the opponent while
             avoiding their attacks. A boxer can win by knockout, technical
             knockout or by receiving a higher score from the judges.
@@ -229,7 +239,7 @@
             How many rounds are there in a boxing match?
           </h4>
           <button class="rule-button">Check the answer</button>
-          <p class="rule-answer">
+          <p class="rule-answer-hide">
             Professional boxing matches can last up to 12 rounds, with each
             round lasting three minutes. Amateur and some other competitions may
             use different formats.
@@ -239,12 +249,12 @@
         <div class="rule-card">
           <h4 class="rule-question">What punches are allowed in boxing?</h4>
           <button class="rule-button">Check the answer</button>
-          <p class="rule-answer">
+          <p class="rule-answer-hide">
             Boxers can use legal punches such as the jab, cross, hook and
             uppercut. Punches must land on the front or sides of the opponent's
             head or body above the belt.
           </p>
-          <p>
+          <p class="rule-answer-hide">
             Punches to the back of the head, neck or below the belt are illegal.
             Hitting an opponent who is down or using the elbows, head or other
             illegal techniques is also prohibited.
@@ -254,7 +264,7 @@
         <div class="rule-card">
           <h4 class="rule-question">What happens after a knockdown?</h4>
           <button class="rule-button">Check the answer</button>
-          <p class="rule-answer">
+          <p class="rule-answer-hide">
             The referee starts a count while the knocked-down boxer tries to get
             back on their feet. If the boxer cannot continue before the count
             ends, the opponent wins by knockout.
@@ -264,7 +274,7 @@
         <div class="rule-card">
           <h4 class="rule-question">How do judges score a boxing match?</h4>
           <button class="rule-button">Check the answer</button>
-          <p class="rule-answer">
+          <p class="rule-answer-hide">
             Judges score each round based on factors such as effective punching,
             defense, ring control and effective aggression. The boxer who wins
             the most rounds usually receives the higher score.
@@ -273,8 +283,11 @@
       </section>
     </main>
     <footer>
+        <div>
       <h3>Do you have more questions?</h3>
       <WBA>Check more information about boxing in the <a href="https://www.wbaboxing.com/" target="_blank"> WBA Official Website</a></p>
+        <p id="copyright">2026. Mar Alaya Melia.</p>
+        </div>
       <aside>
         <header>Next fights</header>
         <div class="aside-fight">
@@ -289,7 +302,7 @@
             <p>Buenos Aires (ARG)</p>
         </div>
       </aside>
-      <p id="copyright">2026. Mar Alaya Melia.</p>
+      
     </footer>
   </body>
 </html>
