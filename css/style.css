@@ -14,6 +14,36 @@ body {
     text-decoration: none;
     color: whitesmoke;
   }
+
+  h2 {
+    text-align: left;
+    margin: 2rem 0 2rem 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+  /* Nav Bar */
+
   .menu {
     display: flex;
     background-color: whitesmoke;
@@ -27,14 +57,19 @@ body {
       margin: 1rem;
       gap: 4rem;
       list-style: none;
+      a {
+        color: #000103;
+      }
     }
   }
+
+  /* Hero Section */
 
   #hero {
     background-image: url(/assets/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,27 +104,37 @@ body {
     }
   }
 
-  #section-intro {
-    margin: 1rem;
-    padding: 1rem;
+  /* Section Intro Boxing */
 
-    ol {
+  #section-intro {
+    margin: 3rem;
+    text-align: center;
+
+    .container-punches {
       display: flex;
-      margin: 2rem;
-      gap: 4rem;
-      text-align: center;
+      justify-content: space-evenly;
+
+      img {
+        background-color: #fffffa;
+        border-radius: 50%;
+        margin: 0.5rem 0 0.5rem 0;
+      }
+      .punches {
+        background-color: #515052;
+        margin: 1rem 0 1rem 0;
+        padding: 1rem;
+        border-radius: 10%;
+
+        &:hover {
+          box-shadow: 2px 2px 2px whitesmoke;
+        }
+      }
     }
 
     table {
       margin: 2rem 0 2rem 0;
       text-align: center;
     }
-  }
-
-  h2 {
-    text-align: center;
-    padding: 1rem;
-    margin: 2rem;
   }
 
   .legend-person {
