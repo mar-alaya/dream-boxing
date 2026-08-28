@@ -1,9 +1,13 @@
 console.log("Script loaded!");
 
-const check = document.querySelector(".rule-button");
-const answer = document.querySelector(".rule-answer-hide");
+const cards = document.querySelectorAll(".rule-card");
 
-check.addEventListener("click", () => {
-  answer.classList.remove("rule-answer-hide");
-  answer.classList.add("rule-answer-show");
+cards.forEach((card) => {
+  const check = card.querySelector(".rule-button");
+  const answer = card.querySelector(".rule-answer-hide, .rule-answer-show");
+
+  check.addEventListener("click", () => {
+    answer.classList.remove("rule-answer-hide");
+    answer.classList.add("rule-answer-show");
+  });
 });

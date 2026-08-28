@@ -46,7 +46,7 @@ body {
     font-size: 1.5rem;
     margin: 2rem;
     padding-left: 3rem;
-    padding-right:;
+    padding-right: 3rem;
     text-align: center;
   }
 
@@ -179,7 +179,7 @@ body {
 
   /* Boxing legends Section */
 
-  #legends {
+  #section-legends {
     margin: 5rem;
     .section-legend-card {
       display: flex;
@@ -206,6 +206,36 @@ body {
     }
   }
   /* Rules Section */
+
+  #section-rules {
+    margin: 5rem;
+    .rule-card {
+      background-color: whitesmoke;
+      border-radius: 10rem;
+      padding: 1rem;
+      margin: 1rem;
+      color: #000103;
+      .rule-answer-show {
+        margin: 1rem;
+        color: #302d2d;
+      }
+      .rule-question {
+        display: flex;
+        justify-content: space-between;
+        .rule-button {
+          background-color: whitesmoke;
+          border: 0.1rem solid brown;
+          color: brown;
+          margin-right: 1rem;
+          border-radius: 10rem;
+          &:hover {
+            background-color: brown;
+            color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
 
   .rule-answer-hide {
     display: none;
@@ -283,21 +313,24 @@ body {
         color: whitesmoke;
       }
     }
+
     aside {
       background-color: #302d2d;
       border-radius: 10%;
       color: whitesmoke;
       box-shadow: 5px 5px 5px #000103;
-        .aside-fight {
-          text-align: center;
-          padding: 0.5rem;
-        }
-        span {
-          color: brown;
-        }
-        p {
-          color: #dbd8d8;
-        }
+
+      .aside-fight {
+        text-align: center;
+        padding: 0.5rem;
+      }
+
+      span {
+        color: brown;
+      }
+
+      p {
+        color: #dbd8d8;
       }
     }
   }
