@@ -20,6 +20,7 @@
               <li><a href="#section-intro">What is Boxing?</a></li>
               <li><a href="#legends">Boxing Legends</a></li>
               <li><a href="#section-rules">Rules</a></li>
+              <li><a href="#section-contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -280,69 +281,75 @@
         </div>
       </section>
 
-      <section class="form">
-        <h2>Start your training with us now!</h2>
-        <form action="/senden" method="post">
-          <div class="form-field">
-            <label for="fistname">First name</label>
-            <input
-              type="text"
-              id="firstname"
-              name="firstname"
-              aria-label="Enter your first name"
-              required
-            />
-          </div>
+      <section id="section-form">
+        <div class="form">
+          <h2>Start your training with us now!</h2>
+          <form action="https://formspree.io/f/xljeejvj" method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fistname">First name</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  aria-label="Enter your first name"
+                  required
+                />
+              </div>
 
-          <div class="form-field">
-            <label for="lastname">Last name</label>
-            <input
-              type="text"
-              id="lastname"
-              name="lastname"
-              aria-label="Enter your last name"
-              required
-            />
-          </div>
+              <div class="form-field">
+                <label for="lastname">Last name</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  aria-label="Enter your last name"
+                  required
+                />
+              </div>
+            </div>
 
-          <div class="form-field">
-            <label for="email">E-mail Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              aria-label="Enter your email address"
-              required
-            />
-          </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">E-mail Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  aria-label="Enter your email address"
+                  required
+                />
+              </div>
 
-          <div class="form-field">
-            <label for="experience">How long did you train boxing?</label>
-            <select
-              id="experience"
-              name="experience"
-              aria-label="Choose your boxing experience"
-              required
-            >
-              <option value="">-- Your Experience --</option>
-              <option value="beginner">1 year or less</option>
-              <option value="intermediate">Up to 2 years</option>
-              <option value="expert">More than 2 years</option>
-            </select>
-          </div>
+              <div class="form-field">
+                <label for="experience">How long did you train boxing?</label>
+                <select
+                  id="experience"
+                  name="experience"
+                  aria-label="Choose your boxing experience"
+                  required
+                >
+                  <option value="">-- Your Experience --</option>
+                  <option value="beginner">1 year or less</option>
+                  <option value="intermediate">Up to 2 years</option>
+                  <option value="expert">More than 2 years</option>
+                </select>
+              </div>
+            </div>
 
-          <div class="form-field">
-            <label for="presentation">Tell us about yourself</label>
-            <textarea
-              id="presentation"
-              name="presentation"
-              aria-label="Describe yourself in a few words"
-            >
-            </textarea>
-          </div>
+            <div class="form-field">
+              <label for="presentation">Tell us about yourself</label>
+              <textarea
+                id="presentation"
+                name="presentation"
+                aria-label="Describe yourself in a few words"
+              >
+              </textarea>
+            </div>
 
-          <button type="submit">Senden</button>
-        </form>
+            <button type="submit">Senden</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

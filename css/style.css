@@ -17,7 +17,7 @@ body {
 
   h2 {
     text-align: left;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: 0.1rem;
     text-align: center;
@@ -27,7 +27,7 @@ body {
 
   h3 {
     text-align: center;
-    margin: 5rem 0 2rem 0;
+    margin: 2rem;
     font-size: 1.5rem;
   }
 
@@ -48,6 +48,22 @@ body {
     padding-left: 3rem;
     padding-right:;
     text-align: center;
+  }
+
+  button {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: brown;
+    color: whitesmoke;
+    font-weight: 600;
+    &:hover {
+      background-color: rgb(109, 30, 30);
+    }
+    &:active {
+      background-color: rgb(241, 78, 78);
+    }
   }
 
   /* Nav Bar */
@@ -95,18 +111,6 @@ body {
       p {
         margin: 1rem 0 1rem 0;
         font-size: 1.5rem;
-      }
-    }
-    button {
-      border: none;
-      padding: 1rem;
-      cursor: pointer;
-      border-radius: 1rem;
-      &:hover {
-        background-color: rgb(109, 30, 30);
-      }
-      &:active {
-        background-color: rgb(241, 78, 78);
       }
     }
   }
@@ -176,7 +180,7 @@ body {
   /* Boxing legends Section */
 
   #legends {
-    margin-top: 5rem;
+    margin: 5rem;
     .section-legend-card {
       display: flex;
       margin: 5rem 2rem 5rem 2rem;
@@ -201,13 +205,47 @@ body {
       }
     }
   }
+  /* Contact Section */
 
-  button {
-    padding: 0.5rem;
-    background-color: brown;
-    font-weight: 600;
-    color: whitesmoke;
-    margin: 1rem 0 1rem 0;
+  #section-form {
+    margin-top: 5rem;
+    padding: 2rem;
+    height: 80vh;
+    background-image: url(/assets/contact_background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .form {
+      background-color: whitesmoke;
+      padding: 2rem;
+      box-shadow: 50px -16px #000103;
+      color: #000103;
+      border-radius: 10%;
+      form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem;
+      }
+      .form-row{
+      display: flex;
+    }
+
+      label {
+          margin-bottom: 0.5rem;
+        }
+        button{
+          margin: 0.5rem;
+        } 
+      }
+    }
   }
 
   .rule-answer-hide {
@@ -229,17 +267,6 @@ body {
     aside {
       border: 2px solid rgb(26, 26, 26);
       padding: 1rem;
-    }
-  }
-
-  form {
-    margin: 2rem 15rem 2rem 15rem;
-    border: 1rem solid brown;
-    .form-field {
-      margin: 1rem 0 1rem 0;
-      padding: 1rem 0 1rem 0;
-      color: rgb(26, 26, 26);
-      color: whitesmoke;
     }
   }
 }
