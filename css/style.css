@@ -90,7 +90,7 @@ body {
   /* Hero Section */
 
   #hero {
-    background-image: url(/assets/hero.jpg);
+    background-image: url(../assets/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 75vh;
@@ -251,7 +251,7 @@ body {
     margin-top: 5rem;
     padding: 2rem;
     height: 80vh;
-    background-image: url(/assets/contact_background.jpg);
+    background-image: url(../assets/contact_background.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
